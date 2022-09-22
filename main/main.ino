@@ -16,11 +16,6 @@ void loop() {
   state = digitalRead(2);
 
   if (state == LOW){
-    digitalWrite(3, HIGH);
-    digitalWrite(4, LOW);
-    digitalWrite(5, LOW);
-  }
-  else{
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
     digitalWrite(5, HIGH);
@@ -30,6 +25,9 @@ void loop() {
     digitalWrite(5, LOW);   
     delay(250);
   }
-
- 
+  else{
+    digitalWrite(3, HIGH);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+  }
 }
